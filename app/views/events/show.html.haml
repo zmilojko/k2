@@ -15,6 +15,15 @@
 %p
   %b Location coordinates:
   = @event.location_coordinates
+  
+%table
+  %tr
+    %th Name
+    %th Content
+  - @event.pages.each do |page|
+    %tr
+      %td= page.name
+      %td= page.content
 
 = link_to 'Edit', edit_event_path(@event)
 \|
