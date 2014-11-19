@@ -6,4 +6,5 @@ class Event
   field :location, type: String
   field :location_coordinates, type: String
   field :status, type: String
+  embeds_many :pages
 end
