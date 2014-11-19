@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Entry:
+  = @run.entry
+%p
+  %b Race:
+  = @run.race
+%p
+  %b Number:
+  = @run.number
+%p
+  %b Verdict:
+  = @run.verdict
+%p
+  %b Result time:
+  = @run.result_time
+
+= link_to 'Edit', edit_run_path(@run)
+\|
+= link_to 'Back', runs_path

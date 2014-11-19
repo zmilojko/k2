@@ -1,0 +1,27 @@
+%h1 Listing runs
+
+%table
+  %tr
+    %th Entry
+    %th Race
+    %th Number
+    %th Verdict
+    %th Result time
+    %th
+    %th
+    %th
+
+  - @runs.each do |run|
+    %tr
+      %td= run.entry
+      %td= run.race
+      %td= run.number
+      %td= run.verdict
+      %td= run.result_time
+      %td= link_to 'Show', run
+      %td= link_to 'Edit', edit_run_path(run)
+      %td= link_to 'Destroy', run, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Run', new_run_path
