@@ -23,7 +23,7 @@
   - @event.pages.each do |page|
     %tr
       %td= page.name
-      %td= page.content
+      %td=Markdown.render(page.content).html_safe
 
 = link_to 'Edit', edit_event_path(@event)
 \|
