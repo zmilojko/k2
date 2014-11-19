@@ -1,3 +1,4 @@
+
 class User
   include Mongoid::Document
   # Include default devise modules. Others available are:
@@ -7,7 +8,7 @@ class User
 
   ## ZWR generated fields
   field :name,               type: String, default: ""
-  field :admin,              type: Boolean, default: ""
+  field :admin,              type: Boolean, default: false
 
   ## Database authenticatable
   field :email,              type: String, default: ""
