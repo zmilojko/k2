@@ -3,9 +3,9 @@ Rails.application.routes.draw do
 
   resources :competitions
 
-  resources :pages
-
-  resources :events
+  resources :events do
+    resources :pages
+  end
 
   devise_for :users
   scope '/admin' do

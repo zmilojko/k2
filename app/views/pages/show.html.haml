@@ -7,6 +7,6 @@
   %b Content:
   = @page.content
 
-= link_to 'Edit', edit_page_path(@page)
+= link_to 'Edit', edit_event_page_path(@event, @page)
 \|
-= link_to 'Back', pages_path
+= link_to 'Back', event_pages_path(@event)

@@ -12,10 +12,10 @@
     %tr
       %td= page.name
       %td= page.content
-      %td= link_to 'Show', page
-      %td= link_to 'Edit', edit_page_path(page)
-      %td= link_to 'Destroy', page, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %td= link_to 'Show', event_page_path(@event, page)
+      %td= link_to 'Edit', edit_event_page_path(@event, page)
+      %td= link_to 'Destroy', event_page_path(@event, page), :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
 
-= link_to 'New Page', new_page_path
+= link_to 'New Page', new_event_page_path(@event)
