@@ -4,5 +4,5 @@ class Run
   field :race, type: String
   field :number, type: String
   field :verdict, type: String
-  field :result_time, type: Decimal
+  field :result_time, type: Integer
 end
