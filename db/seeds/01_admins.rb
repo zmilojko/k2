@@ -12,4 +12,5 @@ User.create!  name: "John Doe",
              password: "password",
              password_confirmation: "password",
              email: "john@example.com"
+puts "Loaded admin and two sample users"
 
