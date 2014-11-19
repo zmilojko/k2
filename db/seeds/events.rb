@@ -75,3 +75,4 @@
     location: "Ruka, Kuusamo",
     location_coordinates: "66.522132,25.790379",
     status: "open"
+puts "Loaded #{Event.count} events."
