@@ -6,6 +6,10 @@ class User
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  ## Kilpako specific fields
+  field :nationality,        type: String, default: "finland"
+  field :club,               type: String, default: ""
+
   ## ZWR generated fields
   field :name,               type: String, default: ""
   field :admin,              type: Boolean, default: false
