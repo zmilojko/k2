@@ -7,6 +7,7 @@ class Competition
   field :date_end, type: Date
   field :status, type: String
   field :format, type: String
+  embeds_many :races
   
   Formats = ["two races combined", "single race"]
   Status = [:not_published, :open, :ready,
