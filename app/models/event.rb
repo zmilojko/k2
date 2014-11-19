@@ -7,4 +7,5 @@ class Event
   field :location_coordinates, type: String
   field :status, type: String
   embeds_many :pages
+  embeds_many :competitions
 end

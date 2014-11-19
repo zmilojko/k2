@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @competition.name
+%p
+  %b Description:
+  = @competition.description
+%p
+  %b Date start:
+  = @competition.date_start
+%p
+  %b Date end:
+  = @competition.date_end
+%p
+  %b Status:
+  = @competition.status
+%p
+  %b Format:
+  = @competition.format
+
+= link_to 'Edit', edit_competition_path(@competition)
+\|
+= link_to 'Back', competitions_path
