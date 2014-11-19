@@ -2,7 +2,8 @@ require 'test_helper'
 
 class EventsControllerTest < ActionController::TestCase
   setup do
-    @event = events(:one)
+    Event.delete_all
+    @event = create(:event)
   end
 
   test "should get index" do
