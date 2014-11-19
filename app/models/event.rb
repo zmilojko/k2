@@ -5,4 +5,5 @@ class Event
   field :date_end, type: Date
   field :location, type: String
   field :location_coordinates, type: String
+  field :status, type: String
 end
