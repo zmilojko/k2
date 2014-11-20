@@ -1,0 +1,11 @@
+@roi_cross_sulanmaan_.save!
+@robur_sprint_.save!
+@ruuhirod_.save!
+@ohkolan_talvi.save!
+@eastpoint_open.save!
+@metsakartano_race_sm.save!
+@_ifss_european_champ.save!
+@ruunaa_race.save!
+@_taivalvaara_sled_do.save!
+@shs_metsakartano_spr.save!
+@kuusamo_sprinti.save!
