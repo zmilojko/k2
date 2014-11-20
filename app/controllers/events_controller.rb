@@ -1,15 +1,33 @@
 class EventsController < ApplicationController
-  before_action :set_event, only: [:show, :edit, :update, :destroy]
+  before_action :set_event, only: [:edit, :update, :destroy]
 
   # GET /events
   # GET /events.json
   def index
-    @events = Event.all
+    respond_to do |format|
+      format.html do 
+        @events = Event.all
+      end
+      format.json do
+        # Read here about Modep 
+        # http://mongoid.org/en/moped/docs/driver.html        
+        render json: Event.mongo_session[:events].find.to_json
+      end
+    end
   end
 
   # GET /events/1
   # GET /events/1.json
   def show
+    respond_to do |format|
+      format.html do 
+        set_event
+        @event
+      end
+      format.json do
+        render json: Event.mongo_session[:events].find(_id: BSON::ObjectId.from_string(params[:id])).first.to_json
+      end
+    end
   end
 
   # GET /events/new
